@@ -13,9 +13,9 @@ public enum Sprite {
 
     private Texture texture;
 
-    private Sprite(String texturename){
+    private Sprite(String textureName){
         try {
-            this.texture = TextureLoader.getTexture("PNG", new FileInputStream(new File("res/"+texturename+".png")));
+            this.texture = TextureLoader.getTexture("PNG", new FileInputStream(new File("res/"+textureName+".png")));
         } catch (IOException e) {
             e.printStackTrace();
         }
